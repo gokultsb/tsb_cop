@@ -2,7 +2,7 @@
 
 sudo mkdir /apache && sudo chown hadoop.hadoop /apache
 
-sudo curl https://s3.amazonaws.com/apache-atlas-setup-on-emr/apache-atlas-1.0.0-bin.tar.gz -o /tmp/apache-atlas-1.0.0-bin.tar.gz && sudo tar xvpfz /tmp/apache-atlas-1.0.0-bin.tar.gz -C /apache
+sudo curl https://github.com/gokultsb/tsb_cop/blob/master/apache-atlas-1.2.0-sources.tar.gz -o /tmp/apache-atlas-1.2.0-sources.tar.gz && sudo tar xvpfz /tmp/apache-atlas-1.2.0-sources.tar.gz -C /apache
 sudo curl https://s3.amazonaws.com/apache-atlas-setup-on-emr/kafka_2.11-1.1.0.tgz -o /tmp/kafka_2.11-1.1.0.tgz && sudo tar xvpfz /tmp/kafka_2.11-1.1.0.tgz -C /apache
 sudo yum install -y https://s3.amazonaws.com/apache-atlas-setup-on-emr/jdk-8u171-linux-x64.rpm
 
